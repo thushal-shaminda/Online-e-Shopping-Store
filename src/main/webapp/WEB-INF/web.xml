@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		 xmlns="http://JAVA.sun.com/xml/ns/javaee" 
+		 xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+		 http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" 
+		 version="3.0">
+		 
+<welcome-file-list>
+    <welcome-file>IndexServlet</welcome-file>
+</welcome-file-list>
+	
+	<servlet>
+		<servlet-name>login</servlet-name>
+		<servlet-class>servlet.LoginSellerServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>login</servlet-name>
+		<url-pattern>/log</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>indexservlet</servlet-name>
+		<servlet-class>servlet.IndexServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>indexservlet</servlet-name>
+		<url-pattern>/Home</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>AddItem</servlet-name>
+		<servlet-class>servlet.AddItemServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddItem</servlet-name>
+		<url-pattern>/AddItem</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>MyItems</servlet-name>
+		<servlet-class>servlet.MyItemsServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>MyItems</servlet-name>
+		<url-pattern>/MyItems</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>DeleteItem</servlet-name>
+		<servlet-class>servlet.DeleteItemServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteItem</servlet-name>
+		<url-pattern>/DeleteItem</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>UpdateItem</servlet-name>
+		<servlet-class>servlet.UpdateItemServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateItem</servlet-name>
+		<url-pattern>/UpdateItem</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>SearchItem</servlet-name>
+		<servlet-class>servlet.SearchItemServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SearchItem</servlet-name>
+		<url-pattern>/SearchItem</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>IndexServlet</servlet-name>
+		<servlet-class>servlet.IndexServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>IndexServlet</servlet-name>
+		<url-pattern>/Index</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>CategorySearch</servlet-name>
+		<servlet-class>servlet.CategorySearchServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CategorySearch</servlet-name>
+		<url-pattern>/CategorySearch</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>addtocartservlet</servlet-name>
+		<servlet-class>servlet.addtocartservlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>addtocartservlet</servlet-name>
+		<url-pattern>/addtocart</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>deletecartservlet</servlet-name>
+		<servlet-class>servlet.deletecartservlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>deletecartservlet</servlet-name>
+		<url-pattern>/deleteCartitem</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>updatecartServlet</servlet-name>
+		<servlet-class>servlet.updatecartServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>updatecartServlet</servlet-name>
+		<url-pattern>/edititem</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>orderservlet</servlet-name>
+		<servlet-class>servlet.orderservlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>orderservlet</servlet-name>
+		<url-pattern>/orderitem</url-pattern>
+	</servlet-mapping>
+
+</web-app>
